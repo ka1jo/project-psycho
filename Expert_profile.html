@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psycho</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/move.js/0.0.4/move.min.js" integrity="sha512-hyuyxsdbUJ0hwjMICPbOw6EOwF/xabPTCu30/7yAKfVp0LpXXgFWlRL6cWGLPuH+jAqEQ/2mFsTS3vpjqhsaeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- BS5 CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index1.css">
+     <link rel="stylesheet" href="Expert_profile.css">
+</head>
+
+<body>
+  <div class="container-fluid mob_nav_back">
+    <div class="container">
+      <div
+        class="heber_info_header d-flex justify-content-center align-items-center"
+      >
+        <p class="m-0 py-2">Ən son xəbərləri <a href="#">burdan</a> gör</p>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar_back">
+    <div class="container">
+      <a href="#" class="navbar-brand"
+        ><img src="./img/loqopsixoyazılı.png" alt=""
+      /></a>
+
+      <div class="d-flex">
+        <div
+          id="mobileFrom"
+          class="d-lg-none"
+          class="justify-content-center align-items-center"
+          style="flex-direction: row; display: flex"
+        ></div>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      </div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div id="esasbolme" class="d-none">
+          <a class="nav-item nav-link active" aria-current="page" href="#"
+            ><button type="button" class="eses_btn">
+              <img
+                src="./img/eses_bolme_logo.png"
+                width="26px"
+                height="26px"
+                alt=""
+                srcset=""
+              />
+              <span> Esas Bolme</span>
+            </button>
+          </a>
+        </div>
+        <div class="navbar-nav ms-auto align-items-center">
+          <div
+            id="mobileButtons"
+            class="d-lg-none"
+            style="
+              flex-direction: row;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          ></div>
+          <div
+            id="desktopButtons"
+            class="d-none d-lg-flex"
+            style="display: flex; flex-direction: row"
+          >
+            <a class="nav-item nav-link active" aria-current="page" href="#"
+              ><button type="button" class="tehsil_btn">
+                <img
+                  src="./img/tehsil.svg"
+                  width="26px"
+                  height="26px"
+                  alt=""
+                  srcset=""
+                />
+                <span> Təhsil bölməsi </span>
+              </button>
+            </a>
+
+            <a class="nav-item nav-link active" aria-current="page" href="#"
+              ><button type="button" class="usaq_btn">
+                <img
+                  src="./img/usag.svg"
+                  width="26px"
+                  height="26px"
+                  alt=""
+                  srcset=""
+                />
+                <span>Uşaq bölməsi</span>
+              </button>
+            </a>
+          </div>
+          <div id="desktopFrom" class="d-none d-lg-flex">
+            <a class="nav-item nav-link active" aria-current="page" href="#"
+              ><button type="button" class="anonim_btn">
+                <img
+                  src="./img/anobim.svg"
+                  width="26px"
+                  height="26px"
+                  alt=""
+                  srcset=""
+                />
+                <span> Anonim dinləyici çatı </span>
+              </button>
+            </a>
+            <a
+              class="nav-item nav-link active d-lg-none"
+              aria-current="page"
+              href="#"
+              ><button type="button" class="money_btn">
+                <span>133 azn</span>
+              </button>
+            </a>
+          </div>
+          <a class="nav-item nav-link active" aria-current="page" href="#">
+            <div class="input-group">
+              <div class="input-group-append">
+                <button class="search_button_nav" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <input
+                type="text"
+                class="search_input_nav"
+                placeholder="axtar..."
+              />
+            </div>
+          </a>
+          <a class="nav-item nav-link active" aria-current="page" href="#">
+            <div class="shopping_cart">
+              <i class="fa-solid fa-cart-shopping fa-2x position-relative">
+                <!-- <div class="shopping_cart_count position-absolute">
+                  <span>5</span>
+                </div> -->
+              </i>
+            </div>
+          </a>
+          <a class="nav-item nav-link active" aria-current="page" href="#"
+            ><button type="button" class="user_btn">
+              <img
+                src="./img/user_icon.svg"
+                width="26px"
+                height="26px"
+                alt=""
+                srcset=""
+              />
+            </button>
+          </a>
+        </div>
+        <div id="mobile_menu_transfer" class="d-lg-none"></div>
+      </div>
+    </div>
+  </nav>
+  <style>
+    .wrapper-nav {
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 5px;
+      min-height: 39px;
+      background: var(--first) !important;
+    }
+
+    .list {
+      position: absolute;
+      left: 69px;
+      top: 0px;
+      min-width: 3500px;
+      margin-top: 0px;
+    }
+
+    .list li {
+      display: table-cell;
+      position: relative;
+      text-align: center;
+      cursor: grab;
+      cursor: -webkit-grab;
+      color: #efefef;
+      vertical-align: middle;
+    }
+
+    .scroller {
+      text-align: center;
+      cursor: pointer;
+      display: none;
+      padding: 7px;
+    padding-top: 1px;
+      white-space: no-wrap;
+      vertical-align: middle;
+      background-color: #fff;
+    }
+  </style>
+
+  <body>
+
+    <div class="container mt-2">
+      <div class="container profile_main">
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-4 img_box"
+            style="padding: 0px; position: relative; height: 100%;">
+            <img style="height: px;" class="img-fluid mob_padd mobilephoto" src="png/profile2.png" alt="">
+
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 col-8">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-8">
+                <h5 style="font-size: 19px; color: #fff;" class="mt-4 mob_style mytext1">Səadət Əliyeva
+                </h5>
+                <button style="min-width:125px;
+                    height: 30px;
+             
+                    background: var(--second) !important;
+                    border-radius: 6px;
+                    border: none;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                  
+                    color: #E3E3E3;">Uşaq psixoloqu
+
+                </button>
+                <br>
+                <br>
+                <span class="mobile_text" style="color: #fff; !important">
+                  Mən Aynur Şıxalıyeva hal-hazırda Nur kids tədris mərkəzində Psixoloq kimi fəaliyyət göstərirəm. Təlimçi-psixoloq kimi Asan xidmət mərkəzində və digər yerlərdə təlimlər verirəm. Tipik,atipik uşaqlar və böyüklərlə reablitasiya işi aparıram.
+
+                </span>
+                
+                    
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-4 pt-3">
+                <div class="row">
+                  <div class="col-12" style="float: right;                            ">
+                    <button class="red-tooltip mob_button1" data-bs-toggle="tooltip" data-bs-placement="right"
+                      title="Bu bölmə sizin fəaliyyət üzrə reytinqinizi
+                      əks etdirir" style="color: white !important;
+                                    flex-direction: column;
+                                    background: rgba(0, 255, 255, 0.75);
+                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                    border-radius: 30px;
+                                    border: none;
+                                    padding: 17px 30px;
+                                    float: right;
+                                            ">
+                      <i style="color: #E2720B" class="fa-regular fa-star fa-2x"></i>
+                      <br>
+                      <a style="color: #fff;" href="#">4.9</a>
+                    </button>
+
+                  </div>
+                  <!-- <script>
+                    $(function () {
+                      $('[data-bs-toggle="tooltip"]').tooltip()
+                    })
+                  </script> -->
+                  <style>
+                    .sdsdf{
+                      display: none;
+                      top: 15px;
+                      right: 95px;
+                      width: 190px;
+                      text-align: center;
+                      background: #2c8cc0cc;
+                      border-radius: 15px;
+                      
+                    }
+                    .sdsdf h5{
+                      font-size: 14px;
+                     color: white;
+                     margin: 0px;
+                     padding: 5px 5px;
+                    }
+                    .shtoot:hover .sdsdf{
+                      display: block;
+
+                    }
+
+                  </style>
+                  <div class="col-12 pt-3 ">
+                   
+
+<div class="button_wraper position-relative shtoot">
+  <div class="position-absolute sdsdf" >
+    <h5>Bu bölmə sizin inkişaf qiymətləndirilmənizi əks etdirir</h5>
+  </div>
+  <button class=" mob_button1" data-bs-toggle="tooltip"  style="background: #2C8BC0;
+              flex-direction: column;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 30px;
+              border: none;
+              float: right;
+              padding: 17px 30px;
+              margin-left: -25px;
+              color: white;">
+    <i class="fa-solid fa-chart-line fa-2x"></i>
+    <br>
+    786
+  </button>
+</div>
+                    
+                  </div>
+                  <!-- <script>
+                    $(function () {
+                      $('[data-bs-toggle="tooltip2"]').tooltip()
+                    })
+                  </script> -->
+                  
+                </div>
+              </div>
+
+            </div>
+            <div class="row mt-3 mb-3">
+              <div class="d-flex justify-content-between">
+                
+<button class="buttonstyle dispblock1" style="
+background: var(--second) !important;
+               border-radius: 14px;
+               
+               display: flex;
+               justify-content: space-between !important;
+               border: none;
+               height: 36px;
+               align-items: center;
+               color: white;
+               padding: 0px 20px;
+               
+               font-weight: 600;">
+
+ <span style="" class="me-4">7 paylaşım</span> <span class="me-4"> 32 izləyici</span> <span>125
+   izlənilən</span> </button>
+                <div class="dispblock1" style="float: right;">
+                  <button style="color: rgba(40, 24, 222, 0.7);" class="izle"> <i class="fa-solid fa-user-plus me-2"></i> Izlə</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 dispblock mt-1" style="">
+          <div class="container mt-3 mb-4" style="padding: 0px;">
+            <div class="row d-flex justify-content-center align-items-center ">
+              <div class="custom-select col-6" >
+                <select>
+                  <option value="0">Aktiv</option>
+                  <option value="1">Aktiv</option>
+                  <option value="1">Aktiv deyil</option>
+                </select>
+              </div>
+              <div class="col-6 " style="width: 200px;">
+                <button class="mobile_margin1" style=" background: var(--second) !important;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          padding: 11px 33px;
+          color: white;
+          border: none;
+          
+          "
+
+          >
+                  Paylaşım et
+
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <div class="mobile_st">
+              <button class=" buttonstyle" style=" background: var(--second) !important;
+          border-radius: 14px;
+          justify-content: space-between !important;
+          border: none;
+          height: 36px;
+          align-items: center;
+          color: white;
+          padding: 0px 4px;
+          min-width: 230px;
+          font-weight: 600;">
+
+                <span class="me-4">0 paylaşım</span> <span class="me-4"> 32 izləyici</span> <span>125
+                  izlənilən</span> </button>
+              <div class="d-flex mobdiz" style="float: right; justify-content: center; align-items: center;">
+                
+
+                <button style="color: rgba(40, 24, 222, 0.7);" class="izle"> <i class="fa-solid fa-user-plus me-2"></i> Izlə</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        
+        <div class="mb-3 col-xxl-3 col-xl-3 col-lg-3 side_back_color mobile_slider_none"
+          id="navTransfer"
+        >
+        <div class="custom-select col-3 dispblock1 mb-3 mt-3" style="width:100%;">
+          <select id="op1">
+            <option value="0">Aktiv</option>
+            <option value="1">Aktiv</option>
+            <option value="1">Aktiv deyil</option>
+          </select>
+
+         
+         
+        </div>
+          <div class="side_menu">
+            <a href="#"
+              ><i class="fa-solid fa-house"></i><span>Əsas səhifə</span></a
+            >
+            <a
+              data-bs-toggle="collapse"
+              href="#collapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample1"
+              bis_skin_checked="1"
+              class="collapsed"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="p-0"
+                  ><i class="fa-regular fa-user"></i
+                  ><span class="span_move">Mütəxəssislər</span></span
+                ><i class="fa-solid fa-chevron-down"></i></div
+            ></a>
+            <div
+              class="child_mobile colapse_body collapse"
+              id="collapseExample1"
+              bis_skin_checked="1"
+          
+            >
+              <div class="">
+                <a href="#">Psixoloq</a>
+                <a href="#">Təlimçi</a>
+                <a href="#">Təlimçi</a>
+              </div>
+            </div>
+            <a href="#" class="active"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span>Təhsil bölməsi</span></a
+            >
+            <a href="#">
+              <div class="d-flex align-items-center">
+                <img
+                  src="./img/usag.svg"
+                  alt=""
+                  height="16px"
+                  style="filter: invert(1)"
+                />
+                <span>Uşaq bölməsi</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-flex align-items-center">
+                <img src="./img/psi_academy.svg" alt="" height="16px" />
+                <span>PSİ akademiyası</span>
+              </div></a
+            >
+            <a
+              href="#"
+              style="
+                background-color: #1e1e1e !important;
+                color: white !important;
+              "
+              ><div class="d-flex align-items-center">
+                <img src="./img/anobim.svg" alt="" height="16px" />
+                <span>Anonim dinləyici çatı</span>
+              </div></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-calendar-check"></i
+              ><span>Tədbir və elan</span></a
+            >
+            <a
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              bis_skin_checked="1"
+              class="collapsed"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="p-0"
+                  ><i class="fa-solid fa-qrcode"></i
+                  ><span>Xidmətlər</span></span
+                ><i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </a>
+            <div
+              class="child_mobile colapse_body collapse"
+              id="collapseExample"
+              bis_skin_checked="1"
+              style=""
+            >
+              <div class="">
+                <a href="#">Məsləhət</a>
+
+                <a href="#">Seminar</a>
+
+                <a href="#">Təlim</a>
+
+                <a href="#">Onlayn kitabxana</a>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-store"></i><span>Mağaza</span></a>
+            <a href="#"
+              ><i class="fa-regular fa-bell"></i><span>Xəbərlər</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-sheet-plastic"></i
+              ><span>Layihələrimiz</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-circle-info"></i><span>Haqqımızda</span></a
+            >
+          </div>
+        </div>
+        <div class="col-xxl-9 col-xl-9 col-lg-9 " style="display: block !important;">
+          <!-- <div class="w-100 pt-3" style="">
+            <div class="scroller scroller-left float-left mt-2"><i class="fa fa-chevron-left"></i></div>
+            <div class="scroller scroller-right float-right mt-2"><i class="fa fa-chevron-right"></i></div>
+            <div class="wrapper-nav wrappernav_style">
+              <nav class="nav nav-tabs list mt-2" id="myTab" role="tablist" style="margin: 0px !important;">
+                <a class="nav-item nav-link active" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="public"
+                  aria-expanded="true">Hamısı</a>
+                <a class="nav-item nav-link" href="#tab2" role="tab" data-bs-toggle="tab">Məqalə</a>
+                <a class="nav-item nav-link" href="#tab3" role="tab" data-bs-toggle="tab">Video</a>
+                <a class="nav-item nav-link" href="#tab4" role="tab" data-bs-toggle="tab">Podkast</a>
+                <a class="nav-item nav-link" href="#tab5" role="tab" data-bs-toggle="tab">Kitablar</a>
+                <a class="nav-item nav-link" href="#tab6" role="tab" data-bs-toggle="tab">Musiqi</a>
+                <a class="nav-item nav-link" href="#tab7" role="tab" data-bs-toggle="tab">Film</a>
+                <a class="nav-item nav-link" href="#tab8" role="tab" data-bs-toggle="tab">Tədbir və elanlar</a>
+              </nav>
+            </div>
+            <div class="tab-content pt-2" id="myTabContent">
+              <div role="tabpanel" class="tab-pane fade active show mt-2" id="tab1" aria-labelledby="public-tab"
+                aria-expanded="true">
+                <div class="container background1">
+                  <div class="first_content d-flex justify-content-between pt-3">
+                    <div style="margin-left: 12px;" class="left">
+                      <span>Yeni</span>
+                      <button class="ms-3" style="background: #2C8BC0;
+                              border-radius: 4px;
+                              color: white;
+                              border: none;">Ailə psixologiyası</button>
+                    </div>
+                    <div class="right">
+                      <span>12 dəqiqə</span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="bottom justify-content-between col-lg-6 col-md-12">
+                      <div class="mt-1 mb-1">
+                        <div class="news_user d-flex justify-content-between align-items-center p-0" >
+                          <div class="user_info d-flex align-items-center">
+                            <div class="user_news_photo d-inline-block">
+                              <img src="./png/anonim.png" class="img-fluid" alt="" />
+                            </div>
+                            <div class="user_news_info d-inline-block ps-2">
+                              <span class="user_news_name">Kənan Zərbiyev</span>
+                              <br />
+                              <span class="user_news_position">Pedaqoq, Təhsil koçu</span>
+                            </div>
+                          </div>
+                          <div class="user_news_sub">
+                            <button>
+                              <i class="fa-solid fa-user-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <img class="img-fluid"
+                        src="png/As a Mother, I Have the Power to Destroy My Home - Her View From Home 4.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-12 mob_style11 position-relative " style="text-align: left;">
+                      <div class="border_bottom"></div>
+                      <p class="right_style">Travmatik uşaqların ardında gizlənən ailə daxili mübahisələr!</p>
+                      <span>Valideyin olmaq tək övladı dünyaya gətirməklə bitmir.Övladınıza yanaşma tərziniz onun
+                        gələcək həyatına təsir edir.Bu səbəbdən doğrunu yanlışlardan ayırmaqla uşaqlarınızın sağlam
+                        psixoloji duruma...</span>
+                      <button style="display: block;" class="kecid">Keçid et</button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="container d-flex justify-content-end mt-5">
+                  <br>
+                  <br>
+                  <button class="plus">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="tab-pane fade mt-2" id="tab2" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 2...
+                124124124
+              </div>
+              <div class="tab-pane fade mt-2" id="tab3" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 3...
+
+                1241241
+              </div>
+              <div class="tab-pane fade mt-2" id="tab4" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 4...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab5" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 5...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab6" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 6...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab7" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 7...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab8" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 8...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab9" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 9...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab10" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 10...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab11" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 11...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab12" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 12...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab13" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 13...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab14" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 14...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab15" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 15...
+              </div>
+              <div class="tab-pane fade mt-2" id="tab16" role="tabpanel" aria-labelledby="group-dropdown2-tab"
+                aria-expanded="false">
+                This is the content of Tab 16...
+              </div>
+
+            </div>
+          </div> -->
+          <div class="w-100 pt-3 scroller_style">
+            <div class="scroller scroller-left float-start mt-2"><i class="bi bi-caret-left-fill"></i></div>
+            <div class="scroller scroller-right float-end mt-2"><i class="bi bi-caret-right-fill"></i></div>
+            <div class="wrapper-nav" style="border-radius: 10px;">
+                <nav style="cursor: pointer;" class="nav nav-tabs list mt-2" id="myTab" role="tablist">
+                    <a class="nav-item nav-link pointer active" data-bs-toggle="tab" data-bs-target="#tab1" role="tab" aria-controls="public" aria-selected="true">Hamısı</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab2" role="tab" data-bs-toggle="tab">Məqalə</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab3" role="tab" data-bs-toggle="tab">Video</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab4" role="tab" data-bs-toggle="tab">Podkast</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab5" role="tab" data-bs-toggle="tab">Kitablar</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab6" role="tab" data-bs-toggle="tab">Musiqi</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab7" role="tab" data-bs-toggle="tab">Film</a>
+                    <a class="nav-item nav-link pointer" data-bs-target="#tab8" role="tab" data-bs-toggle="tab">Tədbir və elanlar</a>
+                </nav>
+            </div>
+            <div class="tab-content pt-3" id="myTabContent">
+                <div role="tabpanel" class="tab-pane fade active show mt-2" id="tab1" aria-labelledby="public-tab" >
+                  <div class="container background1">
+                    <div class="first_content d-flex justify-content-between pt-3">
+                      <div style="margin-left: 12px;" class="left">
+                        <span>Yeni</span>
+                        <button class="ms-3" style="background: #2C8BC0;
+                                border-radius: 4px;
+                                color: white;
+                                border: none;">Ailə psixologiyası</button>
+                      </div>
+                      <div class="right">
+                        <span> <i class="fa-regular fa-clock me-1"></i>12 dəqiqə</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="bottom justify-content-between col-lg-6 col-md-12">
+                        <div class="mt-1 mb-1">
+                          <div class="news_user d-flex justify-content-between align-items-center p-0" >
+                            <div class="user_info d-flex align-items-center">
+                              <div class="user_news_photo d-inline-block">
+                                <img src="./png/anonim.png" class="img-fluid" alt="" />
+                              </div>
+                              <div class="user_news_info d-inline-block ps-2">
+                                <span class="user_news_name">Kənan Zərbiyev</span>
+                                <br />
+                                <span class="user_news_position">Pedaqoq, Təhsil koçu</span>
+                              </div>
+                            </div>
+                            <div class="user_news_sub">
+                              <button>
+                                <i class="fa-solid fa-user-plus"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+  
+  
+                        <img class="img-fluid"
+                          src="png/As a Mother, I Have the Power to Destroy My Home - Her View From Home 4.png" alt="">
+                          
+                      </div>
+                      <div class="col-lg-6 col-md-12 mob_style11 position-relative " style="text-align: left;">
+                        <div class="border_bottom"></div>
+                        <p class="right_style">Travmatik uşaqların ardında gizlənən ailə daxili mübahisələr!</p>
+                        <span>Valideyin olmaq tək övladı dünyaya gətirməklə bitmir.Övladınıza yanaşma tərziniz onun
+                          gələcək həyatına təsir edir.Bu səbəbdən doğrunu yanlışlardan ayırmaqla uşaqlarınızın sağlam
+                          psixoloji duruma...</span>
+                        <button style="display: block;" class="kecid">Keçid et <i class="ms-2 fa-solid fa-chevron-right"></i></button>
+                        <div class="social_reaction mt-4">
+                          <ul
+                            class="p-0 m-0 list-unstyled d-flex align-items-center"
+                          >
+                            <li>
+                              <a href="#" class="views"
+                                ><i class="fa-regular fa-eye"></i>
+                                <span class="px-1">6000</span></a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="likes"
+                                ><i class="fa-regular fa-heart"></i>
+                                <span class="px-1">1200</span></a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="save"
+                                ><i class="fa-regular fa-bookmark"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#" class="share"
+                                ><i class="fa-solid fa-share-nodes"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                  <div class="container d-flex justify-content-end mt-5">
+                    <br>
+                    <br>
+                    <!-- Default dropup button -->
+<div class="btn-group dropup">
+  <button type="button" class="mystyle11 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i style="font-weight: 100 !important;" class="fa-solid fa-plus fa-4x"></i>
+  </button>
+  <ul class="dropdown-menu mob_style_li">
+   <li><img style="width: 25px; height: 25px;" class="me-2 img-fluid" src="png/first.png" alt="">Məqalə</li>
+   <li><img style="width: 25px; height: 25px;" class="me-2 mt-2 mb-2 img-fluid" src="png/first1.png" alt="">Video</li>
+   <li><img style="width: 25px; height: 25px;" class="me-2 img-fluid" src="png/first2.png" alt="">Podkast</li>
+   <li><img style="width: 25px; height: 25px;" class="me-2 mt-2 mb-2 img-fluid" src="png/first3.png" alt="">Tədbir və elan</li>
+   <li><img style="width: 25px; height: 25px;" class="me-2 img-fluid" src="png/first4.png" alt="">Kitab tövsiyəsi</li>
+   <li><img style="width: 25px; height: 25px;" class="me-2 mt-2 mb-2 img-fluid" src="png/first5.png" alt="">Film tövsiyəsi</li>
+   <li> <img style="width: 25px; height: 25px;" class="me-2 img-fluid" src="png/first6.png" alt="">Musiqi tövsiyəsi</li>
+  </ul>
+</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade mt-2" id="tab2" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 2...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab3" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 3...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab4" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 4...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab5" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 5...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab6" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 6...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab7" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 7...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab8" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 8...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab9" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 9...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab10" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 10...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab11" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 11...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab12" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 12...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab13" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 13...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab14" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 14...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab15" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 15...
+                </div>
+                <div class="tab-pane fade mt-2" id="tab16" role="tabpanel" aria-labelledby="group-dropdown2-tab" >
+                    This is the content of Tab 16...
+                </div>
+    
+            </div>
+        </div>
+     
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid mob_nav_back py-3 position-fixed d-lg-none"
+      style="bottom: 0"
+    >
+      <div class="mobile_bottom_nav container">
+        <ul
+          class="d-flex justify-content-between align-items-center m-0 p-0 list-unstyled"
+        >
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house fa-2x" style="color: white"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-fire fa-2x" style="color: white"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="infinit_mob_nav position-relative">
+                <i class="fa-solid fa-infinity fa-2x" style="color: white"></i>
+                <div class="infinit_circle1 position-absolute"></div>
+                <div class="infinit_circle2 position-absolute"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-users fa-2x" style="color: white"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="changeIcon(this)"
+            >
+              <i
+                class="fa-solid fa-user fa-2x"
+                style="color: white; width: 32px; height: 32px"
+              ></i>
+            </a>
+          </li>
+          <script>
+            function changeIcon(anchor) {
+              var icon = anchor.querySelector("i");
+              icon.classList.toggle("fa-user");
+              icon.classList.toggle("fa-circle-xmark");
+            }
+          </script>
+        </ul>
+      </div>
+    </div>
+
+
+
+  </body>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"
+></script>
+
+
+
+ <script src="./dist/scrollable-tabs.js"></script>
+  <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /* For each element, create a new DIV that will act as the selected item: */
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /* For each element, create a new DIV that will contain the option list: */
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /* For each option in the original select element,
+        create a new DIV that will act as an option item: */
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /* When an item is clicked, update the original select box,
+          and the selected item: */
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /* When the select box is clicked, close any other select boxes,
+        and open/close the current select box: */
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+
+    function closeAllSelect(elmnt) {
+      /* A function that will close all select boxes in the document,
+      except the current select box: */
+      var x, y, i, xl, yl, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+  </script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+<script src="./index.js"></script>
+
+<script>
+  $(function () {
+    var desktopForm = $("#desktopFrom").html();
+    $(window).on("load resize", function () {
+      if ($(window).width() <= 991) {
+        $("#mobileFrom").html(desktopForm);
+      } else {
+        $("#mobileFrom").empty();
+      }
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    var desktopForm = $("#navTransfer").html();
+    $(window).on("load resize", function () {
+      if ($(window).width() <= 991) {
+        $("#mobile_menu_transfer").html(desktopForm);
+      } else {
+        $("#mobile_menu_transfer").empty();
+      }
+    });
+  });
+</script>
+<script>
+  $(function () {
+    var desktopForm = $("#audiimgtransferdeask").html();
+    $(window).on("load resize", function () {
+      if ($(window).width() <= 991) {
+        $("#audiimgtransfermob").html(desktopForm);
+      } else {
+        $("#audiimgtransfermob").empty();
+      }
+    });
+  });
+</script>
+<script>
+  $(function () {
+    var desktopForm = $("#audusertransfdesk").html();
+    $(window).on("load resize", function () {
+      if ($(window).width() <= 991) {
+        $("#audusertransfmob").html(desktopForm);
+      } else {
+        $("#audusertransfmob").empty();
+      }
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    var desktopForm = $("#esasbolme").html() + $("#desktopButtons").html();
+    $(window).on("load resize", function () {
+      if ($(window).width() <= 991) {
+        $("#mobileButtons").html(desktopForm);
+      } else {
+        $("#mobileButtons").empty();
+      }
+    });
+  });
+</script>
+</body>
+
+</html>
